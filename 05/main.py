@@ -19,6 +19,7 @@ for line in lines:
         row = b >> 3
         col = b & int("0000000111", 2) # idk if you can do this with bitshifting too, this felt kinda cheap
         score = row * 8 + col
+        print(score)
         if score > lastScore:
             lastScore = score
 
